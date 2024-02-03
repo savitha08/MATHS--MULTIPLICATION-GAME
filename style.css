@@ -1,0 +1,157 @@
+ *{
+    box-sizing: border-box;
+}
+html{
+    background: radial-gradient( circle at 100%, #aaa0a0, #b3c7b3, #bcbcd1); 
+}
+#container{
+height:450px;
+width:550px;
+background-color: rgb(91, 232, 242);
+margin:150px auto;
+padding: 20px;
+border-radius: 10px;
+box-shadow:0px 6px 4px 0px rgb(11, 167, 202);
+/* box-shadow:[horizondal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+position:relative;  /*it should be there otherwise #score position is relative to body*/
+}
+#score{
+    background-color:rgb(189, 236, 95);
+    color:black;
+    padding:10px;
+    position:absolute;
+    left:460px;
+    box-shadow: 4px 3px 4px 0px rgb(72, 69, 69);   
+}
+#correct{
+    position:absolute;
+    background-color: rgb(77, 192, 77);
+    padding:10px;
+    color:black;
+    left:240px;
+    display:none;
+
+}
+#tryagain{
+    position:absolute;
+    background-color: rgb(237, 76, 76);
+    padding:10px;
+    color:black;
+    left:240px;
+    display: none;
+}
+#question{
+    height:170px;
+    width:400px;
+    background-color:rgb(181, 153, 239);
+    margin:50px auto 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px rgb(98, 18, 117);
+    text-align: center;
+    font-family: cursive, sans-serif;
+    font-size: 60px; /*line-height: ; */
+    padding: 35px;
+}
+#instruction{
+    height:50px;
+    width:400px;
+    background-color: rgb(237, 117, 251);
+    margin: 0px auto 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px rgb(182, 40, 201);
+    color:rgb(104, 1, 109);
+    text-align: center;
+    padding:15px;
+}
+#choices{
+    height:100px;
+    width: 400px;
+    margin:0px auto 0px auto;
+}
+.box{
+    height:70px;
+    width:75px;
+    background-color: white;
+    float:left;
+    margin-right: 33px;
+    cursor:pointer;
+    box-shadow: 0px 3px 0px 0px rgb(174, 171, 171);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s;
+    text-align: center;
+    line-height: 65px;
+    
+}
+.box:hover{
+background-color: rgb(102, 102, 202);
+color:white;
+box-shadow:0px 4px 0px 0px rgb(49, 36, 83);
+/* transition: all 0.2s; */
+}
+.box:active{
+    box-shadow:0px 0px 0px 0px  #9c89f6;
+    top:4px;
+}
+#box4{
+    margin-right:0;
+}
+#startreset{
+    background-color: #31b2c1;
+    padding:10px;
+    position:absolute;
+    left:225px;
+    border-radius: 5px;
+    margin-top: -15px;
+    width:100px;
+    text-align: center;
+    /* position: relative; */
+    transition: all 0.2s; 
+    /* transform:rotate(30deg); */
+    /* animation:myanimation 0.3; */
+}
+#startreset:hover{
+    background-color: rgb(46, 78, 138);
+    color:white;
+    box-shadow:0px 4px 0px 0px rgb(49, 36, 83);}
+
+#startreset:active{
+    box-shadow:0px 0px 0px 0px  #9c89f6;
+    top:417px;
+}
+    /* transition: all 0.2s; */
+    /* position:relative; */
+ 
+/* @-webkit-keyframes myanimation{
+    from{
+        background-color: rgb(209, 27, 124);
+        transform: rotate(50deg);
+    }
+    to{
+        background-color: rgb(209, 27, 124);
+        transform: rotate(50deg);
+    } */
+#timeremaining{
+    position: absolute;
+    left:365px;
+    padding: 10px;
+    background-color: rgb(192, 225, 45);
+    margin-top: -15px;
+    display: none;
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(rgb(234, 168, 55),rgb(246, 100, 3));
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    /* padding:10px; */
+    text-transform: uppercase;
+    position: absolute;
+    top:105px;
+    left:24px;
+    border: 1px solid grey;
+    z-index:2px;
+    display: none;
+}
