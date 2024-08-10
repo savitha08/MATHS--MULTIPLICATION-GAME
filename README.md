@@ -1,4 +1,4 @@
-# MATHS-GAME
+# MATHS-MULTIPLICATION-GAME
 
 -> Maths game bulid using html,css and javascript.
 
